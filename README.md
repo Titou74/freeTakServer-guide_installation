@@ -90,7 +90,7 @@ sudo service FreeTAKServer start
 sudo nano /usr/local/lib/python3.9/dist-packages/FreeTAKServer-UI/config.py
 ```
 
-Changer les lignes IP / APPIP / MAPIP par l'IP de votre serveur.
+Changer les lignes IP / APPIP par l'IP de votre serveur.
 Corriger la ligne certpath pour y indiquer la version 3.9 de Python (au lieu de 3.8)
 
 ### Premier lancement de FTS UI
