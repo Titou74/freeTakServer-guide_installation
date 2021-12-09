@@ -35,7 +35,7 @@ sudo pip3 install wheel pycairo WTForms==2.3.3 SQLAlchemy==1.3.20 eventlet
 ```
 
 ## Étape 2 : installation et paramétrage de FTS et FTS UI
-### Installation de FTS
+### Installation de FTS et FTSUI
 ```
 sudo pip install FreeTAKServer[ui]
 ```
