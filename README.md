@@ -98,7 +98,7 @@ Corriger la ligne certpath pour y indiquer la version 3.9 de Python (au lieu de 
 sudo python3 /usr/local/lib/python3.9/dist-packages/FreeTAKServer-UI/run.py
 ```
 
-Connectez vous à [server-ip]:5000 pour vérifier le fonctionnement
+Connectez vous à [server-ip]:5000 pour vérifier le fonctionnement. Vous pouvez vous connecter avec admin/password
 
 ### Création du service FTS UI
 ```
