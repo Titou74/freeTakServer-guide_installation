@@ -12,6 +12,8 @@ Aide à l'installation d'un serveur FreeTakServer (FTS) sous DEBIAN 11
 ### Mise à jour de DEBIAN
 ```
 sudo apt update
+```
+```
 sudo apt upgrade
 ```
 
@@ -23,6 +25,8 @@ sudo apt install python3 python3-pip
 Vérification des versions de Python
 ```
 python3 --version
+```
+```
 pip --version
 ```
 
