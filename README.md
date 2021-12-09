@@ -104,7 +104,7 @@ Connectez vous à [server-ip]:5000 pour vérifier le fonctionnement
 sudo nano /etc/systemd/system/FreeTAKServerUI.service
 ```
 ```
-Unit]
+[Unit]
 Description=FreeTAK Server service
 After=network.target
 StartLimitIntervalSec=0
