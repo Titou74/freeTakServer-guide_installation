@@ -1,7 +1,8 @@
 # FreeTakServer - Guide d'installation
 Aide à l'installation d'un serveur FreeTakServer (FTS) sous DEBIAN 11
 
-**INSTALLATION RÉALISÉ AVEC FTS 1.9.6 & PYTHON 3.9**
+**INSTALLATION RÉALISÉ SOUS DEBIAN 11 AVEC FTS 1.9.6 & PYTHON 3.9**
+**LA PROCÉDURE RISQUE D'ÉVOLUER À L'AVENIR AVEC LES PROCHAINES VERSIONS DE FTS**
 
 ## Prérequis
 - Dispose d'un serveur ou d'un VPS
