@@ -136,4 +136,34 @@ Supprimer l'utilisateur admin
 
 ## Étape 4 : sécuration de la communication entre FTS et FTS UI (optionnelle)
 
-Générer un token/mot de passe complexe 
+### Générer un token/mot de passe complexe.
+Vous pouvez utiliser "https://passwordsgenerator.net/", en veillant à cocher "Exclude Ambiguous Characters"
+
+### Configurer le token dans la configuration de FTS
+```
+sudo nano /opt/FTSConfig.yaml
+```
+Décommentez la ligne "Exclude Ambiguous Characters" et ajouter ensuite le token entre guillement simple
+```
+  FTS_WEBSOCKET_KEY: 'votre_token_archi_complexe'
+```
+
+### Configurer le token dans FTS UI
+```
+sudo nano /usr/local/lib/python3.9/dist-packages/FreeTAKServer-UI/config.py
+```
+Saisissez votre token après "WEBSOCKETKEY"
+```
+    WEBSOCKETKEY = 'votre_token_archi_complexe'
+```
+
+### Redémarrer les services FTS et FTSUI
+```
+sudo service FreeTAKServer restart
+```
+```
+sudo service FreeTAKServerUI restart
+```
+
+Vérifier le bon fonctionnement de FTS UI sur [server-ip]:5000
+Si ça ne fonctionnement pas, vérifiez que vous n'avez pas fait d'erreur de saisie au niveau des tokens
