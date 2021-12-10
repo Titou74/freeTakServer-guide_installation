@@ -24,12 +24,9 @@ sudo apt upgrade
 sudo apt install python3 python3-pip
 ```
 
-Vérification des versions de Python
+Vérification des versions de Python. Vous devriez avoir une version de python 3.9.X
 ```
 python3 --version
-```
-```
-pip --version
 ```
 
 ### Installation de dépendances nécessaires
