@@ -5,6 +5,10 @@ Aide à l'installation d'un serveur FreeTakServer (FTS) sous DEBIAN 11
 
 **La procédure risque d'évoluer à l'avenir avec les prochaines versions de FTS**
 
+## Collaboration
+
+N'hésitez pas à proposer des modifications / corrections ou à indiquer des éventuels erreurs en ouvrant une issue.
+
 ## Prérequis
 - Dispose d'un serveur ou d'un VPS
 - Avoir DEBIAN 11 installé
