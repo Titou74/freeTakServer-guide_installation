@@ -64,7 +64,9 @@ python_version = 'python3.9'
 ```
 sudo python3 -m FreeTAKServer.controllers.services.FTS
 ```
-Répondez aux quelques questions qui seront demandé afin de créer la configuration initiale (simplement faire entrer)
+Répondez aux quelques questions qui seront demandé afin de créer la configuration initiale.
+
+Si vous ne comprenez pas les questions et les implications, je vous conseille de laisser les paramètres par défaut et simplement faire "Entrer" à chaque questions.
 
 ### Création et lancement du service FTS
 ```
@@ -96,15 +98,18 @@ sudo service FreeTAKServer start
 sudo nano /usr/local/lib/python3.9/dist-packages/FreeTAKServer-UI/config.py
 ```
 
-Changer les lignes IP / APPIP par l'IP de votre serveur.
-Corriger la ligne certpath pour y indiquer la version 3.9 de Python (au lieu de 3.8)
+Changer les lignes **IP / APPIP / MAPIP** par l'IP de votre serveur.
+
+Corriger la ligne **certpath** pour y indiquer la version 3.9 de Python (au lieu de 3.8)
 
 ### Premier lancement de FTS UI
 ```
 sudo python3 /usr/local/lib/python3.9/dist-packages/FreeTAKServer-UI/run.py
 ```
 
-Connectez vous à [server-ip]:5000 pour vérifier le fonctionnement. Vous pouvez vous connecter avec admin/password
+Connectez vous à [server-ip]:5000 pour vérifier le fonctionnement.
+
+Vous pouvez vous authentifier avec admin/password.
 
 ### Création du service FTS UI
 ```
@@ -131,15 +136,15 @@ sudo service FreeTAKServerUI start
 ```
 
 ## Étape 3 : modification du compte FTS
-Connectez vous à l'UI [server-ip]:5000
+Connectez vous à l'UI [server-ip]:5000,
 
-Connectez vous avec admin/password
+Connectez vous avec admin/password,
 
-Créer un nouvelle utilisateur
+Créer un nouvelle utilisateur,
 
-Déconnectez vous puis connectez vous avec le nouvelle utilisateur
+Déconnectez vous puis connectez vous avec le nouvelle utilisateur,
 
-Supprimer l'utilisateur admin
+Supprimer l'utilisateur admin.
 
 ## Étape 4 : sécuration de la communication entre FTS et FTS UI (optionnelle)
 
@@ -173,4 +178,5 @@ sudo service FreeTAKServerUI restart
 ```
 
 Vérifier le bon fonctionnement de FTS UI sur [server-ip]:5000
+
 Si ça ne fonctionnement pas, vérifiez que vous n'avez pas fait d'erreur de saisie au niveau des tokens
